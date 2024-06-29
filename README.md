@@ -1,5 +1,8 @@
 This repo was created for the purpose of Odoo Combat 2024 .The problem statement choosen was Organizational Grievance Support System
 
+Althought we couldnt finish the project in time but it was a fun and great learning experiece for mr to get familiar with full-stack development. I will do a further work and improvement on this project for fun and learning at a later time after the hackathon.
+
+
 
 **Description**:
 User Authentication and Authorization
