@@ -1,5 +1,6 @@
 This repo was created for the purpose of Odoo Combat 2024 .The problem statement choosen was Organizational Grievance Support System
 
+
 **Description**:
 User Authentication and Authorization
 User Registration/Login: Secure registration and login for employees and administrators.
