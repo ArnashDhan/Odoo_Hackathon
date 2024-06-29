@@ -1,3 +1,23 @@
 {% extends "base.html"%}{% block title %}Home{% endblock %}
 
-{% block content %}<h1>This is the home Page</h1>{% endblock %}
+{% block content %}
+    <h1 align ="center">Report</h1>
+    <ul class ="list-group list-group-flush" id ="reports">
+        {% for report in user.report %}
+        <li class="list-group-item">
+            {{ report.data }}
+            <button type="button" class="close" onClick="deleteReport({{report.id}})">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </li>
+        {% endfor %}
+    </ul>
+    <form method ="POST">
+        <textarea name ="report" id ="report" class="form-control"></textarea>
+        <br/>
+        <div align ="center">
+            <button type ="submit" class="btn btn-primary">Add Report</button>
+        </div>
+    </form>
+    
+{% endblock %}
