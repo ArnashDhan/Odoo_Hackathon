@@ -1,8 +1,12 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
+db=SQLAlchemy
+DB_NAME="database.db"
 def create_app():
     app = Flask(__name__)
     app.config['secret_key'] = 'odoo_combat'
+    app.config['SQLALHEMY_DATABASE_URI']=f'sqlite:///{DB_NAME}'
     from .views import views
     from .auth import auth
 
